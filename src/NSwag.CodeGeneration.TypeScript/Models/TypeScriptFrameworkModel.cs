@@ -49,6 +49,9 @@ namespace NSwag.CodeGeneration.TypeScript.Models
         public bool UseMomentJS => _settings.TypeScriptGeneratorSettings.DateTimeType == TypeScriptDateTimeType.MomentJS ||
                                    _settings.TypeScriptGeneratorSettings.DateTimeType == TypeScriptDateTimeType.OffsetMomentJS;
 
+        /// <summary>Gets a value indicating whether Luxon is required.</summary>
+        public bool UseLuxon => _settings.TypeScriptGeneratorSettings.DateTimeType == TypeScriptDateTimeType.Luxon;
+
         /// <summary>Gets a value indicating whether to use RxJs 5.</summary>
         public bool UseRxJs5 => _settings.RxJsVersion < 6.0m;
 

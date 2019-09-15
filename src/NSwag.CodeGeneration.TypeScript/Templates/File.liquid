@@ -62,6 +62,10 @@ import * as moment from 'moment';
 import 'moment-duration-format';
 {%         endif -%}
 {%     endif -%}
+{%     if Framework.UseLuxon -%}
+
+import luxon, { DateTime, Duration } from 'luxon';
+{%     endif -%}
 {% endif -%}
 
 {% if HasModuleName -%}
